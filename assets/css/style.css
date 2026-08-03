@@ -1,0 +1,179 @@
+@import  url('https://fonts.google.com/specimen/Inter+Tight?query=inter');
+
+/*--------------------------
+Variaveis De Cores e Reset
+---------------------------
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'inter', sans-serif;
+}
+
+
+
+
+
+:root {
+  --bg-left: #dbeeff;
+  --bg-card: #ffffff;
+  --primary-blue: #002b66;
+  --secondary-blue: #2a61b3;
+  --text-color: #333333;
+  --border-color: #cccccc;
+  --shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+/*-----------------
+  Estrutura Geral
+  -----------------
+*/
+
+body {
+  display: flex;
+  min-height: 90vh;
+  padding-bottom: 45px;
+  position: relative;
+}
+
+body>p:nth-of-type(1),
+body>p:nth-of-type(2),
+body>p:nth-last-of-type(3){
+  position: static;
+  left: 8%;
+}
+
+body>p:nth-of-type(1){
+ top:20%;
+ font-size: 2.4rem;
+ font-weight: 700;
+ color:var(--primary-blue);
+}
+
+body>p:nth-of-type(2){
+ top:30%;
+ font-size:1.2rem;
+ color:var(--secondary-blue);
+ font-weight: 500;
+}
+
+body>p:nth-of-type(3){
+ top:40%;
+ max-width: 290px;
+ font-size: 0.95rem;
+ color:var(--primary-blue);
+ line-height: 1.6;
+}
+
+/*------------------------
+  Card Direito e Container
+  ------------------------
+  */
+
+img {
+  position: static;
+  right: 28%;
+  top: 12%;
+  max-width: 180px;
+  z-index: -1;
+}
+
+form:first-of-type{
+  background-color: var(--bg-card);
+  border-radius: 14px 14px 0 0;
+  box-shadow: var(--shadow);
+  margin-left: auto;
+  margin-right: 6%;
+  margin-top: 160px;
+  padding: 40px 35px 20px 35px;
+  width: 430px;
+}
+
+form:nth-of-type(2){
+  background-color: var(--bg-card);
+  border-radius: 0 0 14px 14px;
+  box-shadow: var(--shadow);
+  margin-left: auto;
+  margin-right: 6%;
+  padding: 0 35px 35px 35px;
+  width: 430px;
+}
+
+/*------------------------------------
+  Campos De Texto e Hover De Movimento
+  ------------------------------------
+  */
+
+form p:first-child{
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--primary-blue);
+  margin-bottom: 16px;
+}
+
+label {
+  display:block;
+  font-weight: 500;
+  font-size: 0.10rem;
+  color: var(--primary-blue);
+  margin-top: 12px;
+  margin-bottom: 6px;
+}
+
+input[type="email"],
+input[type="password"]{
+  width: 100%;
+  padding: 12px;
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 0.95rem;
+
+
+
+/*Suavizacao para movimento*/
+
+transition: trasnform 0.3s ease,bordee-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/*Efeito para aumentar quando passar o mouse ou focar no input*/
+
+input[type="email"]:hover,
+input[type="password"]:hover,
+input[type="email"]:focus,
+input[type="password"]:focus{
+  transform: scale(1.02);
+  border-color: var(--secondary-blue);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+/*Esqueceu Senha(Link)*/
+
+form a{
+   display: block;
+   text-align: right;
+   text-decoration: none;
+   color: var(--secondary-blue);
+   font-size: 0.95rem;
+   margin: 8px 0 20px 0;
+}
+
+form a:hover {
+  text-decoration: underline;
+}
+
+/*-------------------
+  Movimentos e Botões
+  -------------------
+*/
+
+/*Botão:"Entrar"*/
+
+form button[type="submit"]{
+  background-color: var(--primary-blue);
+  color: #ffffff;
+  border: none;
+  border-radius: ;
+
+}
