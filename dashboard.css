@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+   
+body img {
+    border-radius: 30%;
+}
+
+body {
+    background-color: #D7EEFF;
+    
+}
+  
+
+
+
